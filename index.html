@@ -47,6 +47,7 @@
 
       <h1 class="logo"><a href="index.html">光電系學會徵才</a></h1>
       <a href="https://forms.gle/sduXVnWA4MtLkXNe9" class="fa-beat"  style="--fa-animation-duration: 10s;--fa-beat-scale: 1.5;"><b>填寫表單</b></a>
+      
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -170,7 +171,7 @@
           <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
             <div class="content d-flex flex-column justify-content-center">
               <h3>副會長 <a href="https://www.facebook.com/profile.php?id=100001863834096">林坤圜</a></h3>
-              <p>為了徵才架一個網站會太浮誇嗎?<br/>浮誇才好玩啊!🎉🎉</p>
+              <p>為了徵才架一個網站會太浮誇嗎?<br/></p> <p class="fa-bounce"><b>🎉浮誇才好玩啊!🎉</b></p>
             </div>
             <!-- End .content-->
           </div>
@@ -428,7 +429,7 @@
             <!-- End .content-->
           </div>
         </div>
-        <hr/>
+        
 
 
 
@@ -437,20 +438,66 @@
 
       </div>
     </section><!-- End About Section -->
-<!--
 
+    
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("July 19, 2022 23:59:59").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+      
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+      
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "D " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+      
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
+      <hr/>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center justify-content-center">
+              <h2>記得在截止前</h2> <a href="https://forms.gle/sduXVnWA4MtLkXNe9" class="fa-bounce"><h2>填寫表單</h2> </a> <h2>唷</h2> <br/>
+          </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <h1 id="demo"></h1>
+            </div>
+          </div>
+      </div>
+      
+
+
+
+<!--
     <section id="counts" class="counts">
       <div class="container">
 
         <div class="row no-gutters">
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
               <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Happy Clients</strong> consequuntur quae</p>
             </div>
-          </div>
+
 
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
@@ -481,11 +528,14 @@
       </div>
     </section>
   -->
-
-    
-
-
-    <div class="container">
+  <div class="container">
+    <div class="row no-gutters ">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fbobby-0228.github.io%2Frecruitment2022%2F&width=450&layout=standard&action=like&size=large&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+  </div>
+  <hr/>
+  
+  <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>NYCU EO</span></strong>. All Rights Reserved
       </div>
